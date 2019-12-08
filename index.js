@@ -10,18 +10,12 @@ jQuery(document).ready(function ($) {
         url: "https://api.openweathermap.org/data/2.5/group?id=472757,2013348&APPID=001b0f58045147663b1ea518d34d88b4&units=metric&cnt=10",
         dataType: 'json',
         success: function (data) {
-            console.log(data);
 
             temp = [Math.round(data.list[0].main.temp), Math.round(data.list[1].main.temp)];
-            console.log(temp);
             humidity = [data.list[0].main.humidity, data.list[1].main.humidity];
-            console.log(humidity);
             speed = [data.list[0].wind.speed, data.list[1].wind.speed];
-            console.log(speed);
             pressure = [data.list[0].main.pressure, data.list[1].main.pressure];
-            console.log(pressure);
             description = [data.list[0].weather[0].main, data.list[1].weather[0].main];
-            console.log(description);
             var todayTemp = document.querySelector('.todayTemp');
             var setCity = document.querySelector('.city');
             var setHumidity = document.querySelector('.humidity');
