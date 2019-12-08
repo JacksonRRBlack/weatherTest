@@ -39,7 +39,7 @@ jQuery(document).ready(function ($) {
                 setPressure.textContent = pressure[i] + ' мм рт.ст.';
 
                 if (description[i] === "Clear") {
-                    img.src = "animated/day.svg";
+                    img.src = "animated/Clear.svg";
                 } else if (description[i] === "Clouds") {
                     img.src = "animated/cloudy-day-1.svg";
                 } else if (description[i] === "Thunderstorm") {
