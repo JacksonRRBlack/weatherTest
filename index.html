@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Виджет погоды</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="widget">
+    <div class="city"></div>
+
+    <div class="temperature_weather">
+        <div class="todayTemp"></div>
+        <div class="celsius"><img src="celsius.svg" width="40" height="30"></div>
+        <div class="weather"></div>
+    </div>
+    <div class="picture"><img src="humidity.svg" width="32" height="32"><img src="wind.svg" width="32" height="32"><img
+            src="weather.svg" width="32" height="32"></div>
+    <div class="text_animation">
+        <div class="humidity"></div>
+        <div class="speed"></div>
+        <div class="pressure"></div>
+    </div>
+</div>
+
+<div id="widget"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+﻿@font-face {
+    font-family: 'Oswald';
+    src: url('font/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Regular.ttf');
+}
+
+.widget {
+    padding-top: 25px;
+    padding-left: 55px;
+    width: 365px;
+    height: 435px;
+    background-image: url(background.jpg);
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.city {
+    height: 53px;
+    font-size: 42px;
+    padding: 15px 2px 0px;
+    animation-name: show, lift-up;
+    animation-duration: 4s, 4s;
+    animation-iteration-count: infinite;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.temperature_weather {
+    width: 359px;
+    height: 180px;
+    animation: show 4s infinite;
+}
+
+.todayTemp {
+    float: left;
+    font-size: 90px;
+    text-align: right;
+    padding-top: 42px;
+    width: 138px;
+    height: 136px;
+}
+
+.celsius {
+    float: left;
+    padding-top: 82px;
+    width: 40px;
+    height: 96px;
+
+}
+
+.weather {
+    float: left;
+    padding-top: 10px;
+    width: 175px;
+    height: 158px;
+    animation: diagonal 4s infinite;
+}
+
+.weather img {
+    width: 180px;
+    height: 180px;
+}
+
+.picture {
+    float: left;
+    width: 42px;
+    padding-top: 20px;
+    padding-left: 8px;
+    line-height: 30px;
+}
+
+.text_animation {
+    float: left;
+    width: 250px;
+    padding-top: 18px;
+    padding-left: 3px;
+    font-family: Arial;
+    line-height: 39px;
+    font-size: 34px;
+    animation-name: show, lift-up-down;
+    animation-duration: 4s, 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes lift-up {
+    0% {
+        transform: translateY(10px);
+    }
+    15% {
+        transform: translateY(0px);
+    }
+    85% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes lift-up-down {
+    0% {
+        transform: translateY(-10px);
+    }
+    15% {
+        transform: translateY(0px);
+    }
+    85% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes diagonal {
+    0% {
+        transform: translate(-10px, -10px);
+    }
+    15% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
