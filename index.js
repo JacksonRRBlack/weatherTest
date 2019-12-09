@@ -35,15 +35,15 @@ jQuery(document).ready(function ($) {
                 if (description[i] === "Clear") {
                     img.src = "animated/Clear.svg";
                 } else if (description[i] === "Clouds") {
-                    img.src = "animated/cloudy-day-1.svg";
+                    img.src = "animated/Clouds.svg";
                 } else if (description[i] === "Thunderstorm") {
-                    img.src = "animated/thunder.svg";
+                    img.src = "animated/Thunderstorm.svg";
                 } else if (description[i] === "Drizzle") {
-                    img.src = "animated/snowy-4.svg";
+                    img.src = "animated/Drizzle.svg";
                 } else if (description[i] === "Rain") {
-                    img.src = "animated/rainy-4.svg";
+                    img.src = "animated/Rain.svg";
                 } else if (description[i] === "Snow") {
-                    img.src = "animated/snowy-6.svg";
+                    img.src = "animated/Snow.svg";
                 } else {
                     img.src = "animated/cloudy.svg";
                 }
