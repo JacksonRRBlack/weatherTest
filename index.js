@@ -50,14 +50,31 @@ jQuery(document).ready(function ($) {
                 }
                 src.appendChild(img);
 
+                var animShow = document.getElementById("widget");
+                setInterval(function() {
+                    animShow.classList.add("anim_show1");
+                }, 2000);
+                setInterval(function() {
+                    animShow.classList.add("anim_show2");
+                }, 2000);
                 i++;
                 // console.log('i', i);
                 if (i > temp.length - 1) {
                     i = 0;
                 }
-                timer = setTimeout(setAll, 3970);
+                timer = setTimeout(setAll, 4000);
             };
             setAll();
+
         }
     });
 });
+
+
+/*
+var e = document.getElementById("watchme"); - нужные классы
+e.addEventListener("animationstart", listener, false);
+e.addEventListener("animationend", listener, false);
+e.addEventListener("animationiteration", listener, false);
+
+e.className = "slidein";*/

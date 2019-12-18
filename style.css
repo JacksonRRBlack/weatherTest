@@ -23,8 +23,8 @@
     font-size: 42px;
     padding: 15px 2px 0px;
     animation-name: show, lift-up;
-    animation-duration: 4s, 4s;
-    animation-iteration-count: infinite;
+    /*animation-duration: 4s, 4s;
+    animation-iteration-count: 1;*/
     font-family: 'Roboto', sans-serif;
 
 }
@@ -32,7 +32,7 @@
 .temperature_weather {
     width: 359px;
     height: 180px;
-    animation: show 4s infinite;
+    /*animation: show 4s 1;*/
 }
 
 .todayTemp {
@@ -57,7 +57,7 @@
     padding-top: 10px;
     width: 175px;
     height: 158px;
-    animation: diagonal 4s infinite;
+    /*animation: diagonal 4s 1;*/
 }
 
 .weather img {
@@ -81,10 +81,51 @@
     font-family: Arial;
     line-height: 39px;
     font-size: 34px;
-    animation-name: show, lift-up-down;
+    /*animation-name: show, lift-up-down;
     animation-duration: 4s, 4s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;*/
 }
+
+.anim_show1 {
+    animation: show1 2s;
+}
+
+.anim_show2 {
+    animation: show2 2s;
+}
+
+
+@keyframes show1 {
+    0% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes show2 {
+    0% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
 
 
 @keyframes show {
