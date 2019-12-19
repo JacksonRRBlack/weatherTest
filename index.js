@@ -22,11 +22,35 @@ jQuery(document).ready(function ($) {
             var setHumidity = document.querySelector('.humidity');
             var setSpeed = document.querySelector('.speed');
             var setPressure = document.querySelector('.pressure');
+            var textAnimation = document.querySelector('.text_animation');
+            var celsius = document.querySelector('.celsius');
             var img = document.createElement("img");
             var src = document.querySelector('.weather');
             var i = 0;
 
             function setAll() {
+                todayTemp.classList.remove("anim_show2");
+                setCity.classList.remove("anim_show2");
+                src.classList.remove("anim_show2");
+                textAnimation.classList.remove("anim_show2");
+                celsius.classList.remove("anim_show2");
+                todayTemp.classList.add("anim_show1");
+                setCity.classList.add("anim_show1");
+                src.classList.add("anim_show1");
+                textAnimation.classList.add("anim_show1");
+                celsius.classList.add("anim_show1");
+                setTimeout(function() {
+                    todayTemp.classList.remove("anim_show1");
+                    setCity.classList.remove("anim_show1");
+                    src.classList.remove("anim_show1");
+                    textAnimation.classList.remove("anim_show1");
+                    celsius.classList.remove("anim_show1");
+                    todayTemp.classList.add("anim_show2");
+                    setCity.classList.add("anim_show2");
+                    src.classList.add("anim_show2");
+                    textAnimation.classList.add("anim_show2");
+                    celsius.classList.add("anim_show2");
+                }, 2000);
                 todayTemp.textContent = temp[i];
                 setCity.textContent = city[i];
                 setHumidity.textContent = humidity[i] + '%';
@@ -50,13 +74,7 @@ jQuery(document).ready(function ($) {
                 }
                 src.appendChild(img);
 
-                var animShow = document.getElementById("widget");
-                setInterval(function() {
-                    animShow.classList.add("anim_show1");
-                }, 2000);
-                setInterval(function() {
-                    animShow.classList.add("anim_show2");
-                }, 2000);
+
                 i++;
                 // console.log('i', i);
                 if (i > temp.length - 1) {
@@ -69,12 +87,3 @@ jQuery(document).ready(function ($) {
         }
     });
 });
-
-
-/*
-var e = document.getElementById("watchme"); - нужные классы
-e.addEventListener("animationstart", listener, false);
-e.addEventListener("animationend", listener, false);
-e.addEventListener("animationiteration", listener, false);
-
-e.className = "slidein";*/

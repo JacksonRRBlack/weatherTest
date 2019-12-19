@@ -15,16 +15,13 @@
     height: 435px;
     background-image: url(background.jpg);
     font-family: 'Oswald', sans-serif;
-
 }
 
 .city {
     height: 53px;
     font-size: 42px;
     padding: 15px 2px 0px;
-    animation-name: show, lift-up;
-    /*animation-duration: 4s, 4s;
-    animation-iteration-count: 1;*/
+    animation: lift-up 4s infinite;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -32,7 +29,6 @@
 .temperature_weather {
     width: 359px;
     height: 180px;
-    /*animation: show 4s 1;*/
 }
 
 .todayTemp {
@@ -49,7 +45,6 @@
     padding-top: 82px;
     width: 40px;
     height: 96px;
-
 }
 
 .weather {
@@ -57,7 +52,7 @@
     padding-top: 10px;
     width: 175px;
     height: 158px;
-    /*animation: diagonal 4s 1;*/
+    animation: diagonal 4s infinite;
 }
 
 .weather img {
@@ -81,9 +76,7 @@
     font-family: Arial;
     line-height: 39px;
     font-size: 34px;
-    /*animation-name: show, lift-up-down;
-    animation-duration: 4s, 4s;
-    animation-iteration-count: 1;*/
+    animation: lift-up-down 4s infinite;
 }
 
 .anim_show1 {
@@ -98,15 +91,15 @@
 @keyframes show1 {
     0% {
         opacity: 0;
+        transform: translateY(10px);
     }
-    55% {
+    25% {
         opacity: 1;
-    }
-    85% {
-        opacity: 1;
+        transform: translateY(0px);
     }
     100% {
         opacity: 1;
+        transform: translateY(0px);
     }
 }
 
@@ -114,9 +107,6 @@
     0% {
         opacity: 1;
     }
-    55% {
-        opacity: 0;
-    }
     85% {
         opacity: 0;
     }
@@ -125,26 +115,6 @@
     }
 }
 
-
-
-
-@keyframes show {
-    0% {
-        opacity: 0;
-    }
-    5% {
-        opacity: 0;
-    }
-    15% {
-        opacity: 1;
-    }
-    85% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
 
 @keyframes lift-up {
     0% {
@@ -172,7 +142,7 @@
         transform: translateY(0px);
     }
     100% {
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
 }
 
