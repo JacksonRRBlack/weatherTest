@@ -29,27 +29,27 @@ jQuery(document).ready(function ($) {
             var i = 0;
 
             function setAll() {
-                todayTemp.classList.remove("anim_show2");
-                setCity.classList.remove("anim_show2");
-                src.classList.remove("anim_show2");
-                textAnimation.classList.remove("anim_show2");
-                celsius.classList.remove("anim_show2");
-                todayTemp.classList.add("anim_show1");
-                setCity.classList.add("anim_show1");
-                src.classList.add("anim_show1");
-                textAnimation.classList.add("anim_show1");
-                celsius.classList.add("anim_show1");
-                setTimeout(function() {
-                    todayTemp.classList.remove("anim_show1");
-                    setCity.classList.remove("anim_show1");
-                    src.classList.remove("anim_show1");
-                    textAnimation.classList.remove("anim_show1");
-                    celsius.classList.remove("anim_show1");
-                    todayTemp.classList.add("anim_show2");
-                    setCity.classList.add("anim_show2");
-                    src.classList.add("anim_show2");
-                    textAnimation.classList.add("anim_show2");
-                    celsius.classList.add("anim_show2");
+                todayTemp.classList.remove("anim_todayTemp2");
+                setCity.classList.remove("anim_setCity2");
+                src.classList.remove("anim_src2");
+                textAnimation.classList.remove("anim_text2");
+                celsius.classList.remove("anim_todayTemp2");
+                todayTemp.classList.add("anim_todayTemp1");
+                setCity.classList.add("anim_setCity1");
+                src.classList.add("anim_src1");
+                textAnimation.classList.add("anim_text1");
+                celsius.classList.add("anim_todayTemp1");
+                setTimeout(function () {
+                    todayTemp.classList.remove("anim_todayTemp1");
+                    setCity.classList.remove("anim_setCity1");
+                    src.classList.remove("anim_src1");
+                    textAnimation.classList.remove("anim_text1");
+                    celsius.classList.remove("anim_todayTemp1");
+                    todayTemp.classList.add("anim_todayTemp2");
+                    setCity.classList.add("anim_setCity2");
+                    src.classList.add("anim_src2");
+                    textAnimation.classList.add("anim_text2");
+                    celsius.classList.add("anim_todayTemp2");
                 }, 2000);
                 todayTemp.textContent = temp[i];
                 setCity.textContent = city[i];
